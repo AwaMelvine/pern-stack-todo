@@ -1,0 +1,148 @@
+/* Default Styles */
+body {
+  background: #FFF8C9;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.text-input {
+  width: 100%;
+  padding: .7rem 1.2rem;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  border-radius: 5px;
+  line-height: 1.5em;
+  font-size: 1.15em;
+}
+
+.btn {
+  padding: .5rem 1rem;
+  border: 1px solid transparent;
+  background: #635a5c;
+  color: white;
+  border-radius: 3px;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+.btn-sm {
+  padding: 5px 8px;
+  font-size: normal;
+  font-size: 1em;
+  line-height: normal;
+}
+
+.delete-btn {
+  color: #eb778e;
+  font-size: 1.2em;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+  color: #b85d6f;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #383334;
+}
+
+.table-title {
+  text-align: center;
+  margin: 15px auto;
+}
+
+th, td {
+  padding: 10px 5px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+th:hover, td:hover {
+  cursor: default;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  vertical-align: center;
+}
+
+.form-error {
+  color: red;
+  font-size: .9em;
+}
+.input-error {
+  border: 1px solid red;
+}
+/* // Default Styles */
+
+
+/* Content */
+
+.content {
+  width: 100%;
+}
+
+.form-div {
+  width: 40%;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+}
+
+.form-div div {
+  margin-bottom: 10px;
+}
+
+.form-div .form-title {
+  text-align: center;
+  margin: 15px auto;
+}
+
+/* TodoList Page */
+.list-container {
+  width: 40%;
+  background: white;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 950px) {
+  .form-div {
+    width: 50%;
+  }
+  .list-container {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .form-div {
+    width: 80%;
+  }
+  .list-container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .form-div {
+    width: 95%;
+  }
+  .list-container {
+    width: 95%;
+  }
+}
