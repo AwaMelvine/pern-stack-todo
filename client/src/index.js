@@ -10,12 +10,7 @@ import App from "./App";
 import "./index.css";
 import rootReducer from "./rootReducer";
 
-const store = createStore(
-  rootReducer
-  // composeWithDevTools(
-  //    applyMiddleware(thunk, logger)
-  // )
-);
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
   <BrowserRouter>
